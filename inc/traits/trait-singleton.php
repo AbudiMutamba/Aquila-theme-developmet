@@ -42,10 +42,10 @@
 
         $called_class = get_called_class();
 
-        if ( !isset( $instancep[ $called_class ] ) ) {
+        if ( !isset( $instance[ $called_class ] ) ) {
             $instance[ $called_class ] = new $called_class();
 
-            do_action( sprintf( 'quila_theme_singleton_init_%s', $called_class ) ); 
+            do_action( sprintf( 'aquila_theme_singleton_init_%s', $called_class ) ); 
         }
     }
  }
